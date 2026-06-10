@@ -1,7 +1,7 @@
 import useStore from "./store/store";
 import { useState } from "react";
 
-export default function App() {
+function App() {
   const [input, setInput] = useState("");
   const { weather, setCity, fetchWeather } = useStore();
 
@@ -34,3 +34,5 @@ export default function App() {
     </>
   )
 }
+
+export default App;
